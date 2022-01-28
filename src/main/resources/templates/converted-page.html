@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Converted page with result</title>
 </head>
 <body>
-<h2>The program will convert weight to pounds and height to inches and display them on this page: </h2>
+<h2>Results</h2>
+<p>Name: <strong th:text="${name}"></strong></p>
+<p>Height: <span th:text="${height}"></span> (cm) = <strong th:text="${heightInInches}"></strong> (in)</p>
+<p>Weight: <span th:text="${weight}"></span> (kg) = <strong th:text="${weightInPounds}"></strong> (lb)</p>
+
+<a href="first-page-with-parameters">Go back</a>
 </body>
 </html>

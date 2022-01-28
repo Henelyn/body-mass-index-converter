@@ -5,6 +5,18 @@
     <title>Home page</title>
 </head>
 <body>
-<a>First page with parameters</a>
+<h2>Insert data</h2>
+<form action="second-page-converted" method="get">
+    <label for="name">Insert your name: </label>
+    <input name="firstName" id="name" type="text" required>
+    <br><br>
+    <label for="height">Insert height (cm): </label>
+    <input name="height" id="height" type="number" step="any" required>
+    <br><br>
+    <label for="weight">Insert weight (kg): </label>
+    <input name="weight" id="weight" type="number" step="any" required>
+    <br><br>
+    <input type="submit" value="Convert">
+</form>
 </body>
 </html>
